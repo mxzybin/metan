@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="iconfont.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+    <title>
+        
+    </title>
+</head>
+
+  
+<body>
+<div class="wrapper">
+    <section class="calc__wrapper">
+        <div class="wr">
+            <div class="calc__title">
+                <h2 class="name text-center">
+                    РАСЧЁТ ВАШЕЙ ЭКОНОМИИ
+                </h2>
+            </div>
+            <div class="calc">
+                <div class="calc__switcher">
+    
+                </div>
+                <div class="calc__propan">
+                    <div class="calc__inputs">
+                        <div class="calc__input calc__input-fuel">
+                            <div class="calc__input-sub">
+                                <b>Расход топлива,</b><br>
+                                литров на 100 км
+                            </div>
+                            <div class="calc__input-value calc__input-value-fuel">
+                                <input type="range" name="" id="fuel" min="4" max="35" step="1" value="10">
+                                <div id="fuel-live">
+                                    10
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc__input calc__input-price">
+                            <div class="calc__input calc__input-price-benz">
+                                <div class="calc__input-sub">
+                                    <b>
+                                        Цена
+                                        бензина,
+                                    </b> <br> руб
+                                </div>
+                                <div class="calc__input-value">
+                                    <input class="calc__input-value-number" type="number" name="" id="pr-benz" value="47.5">
+                                </div>
+                            </div>
+                            <div class="calc__input calc__input-price-prop">
+                                <div class="calc__input-sub">
+                                    <b>
+                                        Цена
+                                        метана,
+                                    </b><br> руб
+                                </div>
+                                <div class="calc__input-value">
+                                    <input class="calc__input-value-number" type="number" name="" id="pr-prop" value="28.5">
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="calc__input calc__input-run">
+                            <div class="calc__input-sub">
+                                <b>Пробег за месяц</b>
+                            </div>
+                            <div class="calc__input-value calc__input-value-run">
+                                <input type="range" name="" id="run"  min="500" max="30000" step="100" value="3000">
+                                <div id="run-live">
+                                        3000
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="calc__input calc__input-price-gb">
+                            <div class="calc__input-sub">
+                                <b>Цена ГБО,</b><br> руб
+                            </div>
+                            <div class="calc__input-value">
+                                <input class="calc__input-value-number" type="number" name="" id="pr-gbo" value="25000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__results">
+                        <div class="calc__result calc__result-month">
+                            <h4>
+                                Экономия в месяц
+                            </h4>
+                            <div class="result__group">
+                                <div class="result__num-month result__numm" id="res-month">
+                                </div>
+                                <div class="result__num-rub">
+                                    руб
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc__result calc__result-year">
+                                                <h4>
+                                Экономия в год
+                            </h4>
+                            <div class="result__group">
+                                <div class="result__num-year result__numm" id="res-year">
+                                </div>
+                                <div class="result__num-rub">
+                                    руб
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc__result calc__result-profit">
+                            <h4>
+                                Срок окупаемости
+                            </h4>
+                            <div class="result__group">
+                                <div class="result__num-profit result__numm" id="res-prof">
+                                </div>
+                                <div class="result__num-rub">
+                                    мес
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <a href="#" data-modal="window" data-href="#window_send_2" class="calc__btn">Начать экономить</a>
+    
+        </div>
+    </section>
+    <section class="faq">
+        <div class="wr">
+            <div class="faq__section-title">
+                <h2 class="name text-center">
+                    Ваш вопрос - наш ответ
+                </h2>
+            </div>
+            <div class="faq__items">
+                <div class="faq__item">
+                    <div class="faq__body">
+                        <div class="faq__title">
+                            <h3>
+                                Далеко-далеко за словесными горами.
+                            </h3>
+                        </div>
+                        <div class="faq__content">
+                            <p>
+                                Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Запятой за дороге, рот до мир даль выйти все снова?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__body">
+                        <div class="faq__title">
+                            <h3>
+                                Далеко-далеко за словесными горами в стране гласных.
+                            </h3>
+                        </div>
+                        <div class="faq__content">
+                            <p>
+                                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своих мир страну продолжил наш родного единственное приставка буквенных щеке снова пор заглавных образ букв, вопрос знаках точках себя пустился.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__body">
+                        <div class="faq__title">
+                            <h3>
+                                Далеко-далеко за словесными горами.
+                            </h3>
+                        </div>
+                        <div class="faq__content">
+                            <p>
+                                Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Запятой за дороге, рот до мир даль выйти все снова?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__body">
+                        <div class="faq__title">
+                            <h3>
+                                Далеко-далеко за словесными горами.
+                            </h3>
+                        </div>
+                        <div class="faq__content">
+                            <p>
+                                Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Запятой за дороге, рот до мир даль выйти все снова?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#"class="calc__btn">Больше вопросов</a>
+    
+        </div>
+    </section>
+    <section class="rev">
+        <div class="wr">
+            <div class="rev__section-title">
+                <h2 class="name text-center">
+                    Отзывы
+                </h2>
+            </div>
+            <div class="rev__list">
+                <div class="rev__item">
+                    <div class="rev__body">
+                        <div class="rev__images">
+                            <div class="rev__img">
+                                <img src="img/11.jpg" alt="">
+                            </div>
+                            <div class="rev__img">
+                                <img src="img/12.jpg" alt="">
+                            </div>
+                            <div class="rev__img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+                            <div class="rev__img">
+                                <img src="img/14.jpg" alt="">
+                            </div>
+                            <div class="rev__dots"></div>
+
+                        </div>
+                        <div class="rev__content">
+                            <div class="rev__title">
+                                <h3>
+                                    Виктор Пелевин
+                                </h3>
+                            </div>
+                            <div class="rev__subtitle">
+                                <h4>
+                                    ГБО на Toyota Land Cruiser 200 2021г.
+                                </h4>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Одна продолжил бросил языкового букв, предупредила алфавит проектах безопасную семантика путь. Меня, агентство ручеек!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rev__item">
+                    <div class="rev__body">
+                        <div class="rev__images">
+                            <div class="rev__img">
+                                <img src="img/11.jpg" alt="">
+                            </div>
+                            <div class="rev__img">
+                                <img src="img/12.jpg" alt="">
+                            </div>
+                            <div class="rev__dots"></div>
+
+                        </div>
+                        <div class="rev__content">
+                            <div class="rev__title">
+                                <h3>
+                                    Антон Чехов
+                                </h3>
+                            </div>
+                            <div class="rev__subtitle">
+                                <h4>
+                                    ГБО на упряжку 4 л.с.
+                                </h4>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Ведь так ясно, чтобы начать жить в настоящем, надо сначала искупить наше прошлое, покончить с ним, а искупить его можно только страданием, только необычайным, непрерывным трудом.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rev__item">
+                    <div class="rev__body">
+                        <div class="rev__images">
+                            <div class="rev__img">
+                                <img src="img/kartinka-6.jpg" alt="">
+  
+                            </div>
+                            <div class="rev__img">
+                                <img src="img/12.jpg" alt="">
+                            </div>
+                            <div class="rev__img">
+                                <img src="img/13.jpg" alt="">
+                            </div>
+                            <div class="rev__dots"></div>
+
+                        </div>
+                        <div class="rev__content">
+                            <div class="rev__title">
+                                <h3>
+                                    Михаил Булгаков
+                                </h3>
+                            </div>
+                            <div class="rev__subtitle">
+                                <h4>
+                                    ГБО на метлу
+                                </h4>
+                            </div>
+                            <div class="rev__text">
+                                <p>
+                                    Тьма, пришедшая со Средиземного моря, накрыла ненавидимый прокуратором город. Исчезли висячие мосты, соединяющие храм со страшной Антониевой башней, опустилась с неба бездна и залила крылатых богов над гипподромом, Хасмонейский дворец с бойницами, базары, караван-сараи, переулки, пруды...
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <script src="calc-custom.js"></script>
+    <script src="rev-custom.js"></script>
+</body>
+
+</html>
